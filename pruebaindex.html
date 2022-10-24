@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="pruebamain.css">
+    <title>Samsung Landing Page</title>
+</head>
+<body>
+    <section class="sec">
+        <header class= "newHeader" >
+            <a href="#"><img src="img/samsung_logo.png" class="logoSamsung"  alt="rellenar_despues"></a>
+            <ul class="navbarSamsung">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br><span>I like</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum suscipit unde pariatur obcaecati quasi quis nulla quod modi perspiciatis repellendus aperiam consequuntur iusto cumque dolores ad ullam porro, possimus assumenda.</p>
+                <a href="#">View all Products</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="img/celular1.png" class="celular1"  alt="telefono1">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="img/celular1.png" onclick="imgSlider('img/celular1.png');changeBgColor('#01284d')" ></li>
+            <li><img src="img/celular2.png" onclick="imgSlider('img/celular2.png');changeBgColor('black')" alt="telefono x"></li>
+            <li><img src="img/celular3.png" onclick="imgSlider('img/celular3.png');changeBgColor('#b30539')" alt="telefono x"></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png" alt="facebook_logo"></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt="twitter_logo"></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt="instagram_logo"></a></li>
+        </ul>
+
+    </section>
+
+    <script>
+
+        function imgSlider(anything){
+            document.querySelector('.celular1').src = anything;
+        }
+        function changeBgColor (color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color ;
+        }
+
+    </script>
+    <footer>
+        <div class="contenedor-footer">
+        
+             <img src="img/samsung_logo.png" alt="Logo" id="logo1" width="60">
+             <h1>Buenos Aires 1580, CABA, Córdoba, Argentina</h1>
+             <h2>+54 9 113578691</h2>
+             <a href="mailto:electro24@gmail.com"><h2>electro24@gmail.com</h2></a>    
+             <h3 class="copyright">Copyright © ELECTRO 24 2022 - Developed by Grupo 3</h3> 
+
+
+        </div>
+    </footer>
+
+</body>
+</html>
